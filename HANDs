@@ -2,19 +2,24 @@
 
 # HANDs
 
-# "BIZgen" for HH
+
+# "project-gen" for HH
+
 
 #mkdirs
-
+mkdir $1
 
 
 
 # files
 
+echo -e "# $1\n">README.md
 
 
+# git
 
-#x
-
-
+git init
+echo -e "[user]\n\tname = xxxxx\n\temail = xxxxxx">$1/.git/config
+git add -A
+git commit -am init
 
